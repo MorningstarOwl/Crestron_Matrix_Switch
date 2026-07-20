@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to your HD-MD switcher",
+        "description": "The switcher must be reachable on your network with its telnet console enabled (it is by default).",
+        "data": {
+          "host": "IP address",
+          "port": "Telnet port",
+          "inputs": "Number of HDMI inputs",
+          "outputs": "Number of HDMI outputs"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the switcher. Check the IP address and make sure no other telnet session (e.g. PuTTY) is holding the console open.",
+      "unknown": "Unexpected error — check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This switcher is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Name your inputs and outputs",
+        "description": "These names appear in the source dropdowns and entity names."
+      }
+    }
+  }
+}
